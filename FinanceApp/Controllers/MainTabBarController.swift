@@ -11,16 +11,19 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let incomeViewController = IncomeViewController()
+        let incomeViewController = EarningsViewController()
         let graphViewCotroller = GraphViewController()
         let spendViewController = SpendViewController()
         
-        let incomeImage = UIImage(systemName: "newspaper")
+        let earningsImage = UIImage(systemName: "newspaper")
         let graphImage = UIImage(systemName: "arrow.up.right")
         let spendImage = UIImage(systemName: "person.badge.minus")
         
+        let earningsItem  = UITabBarItem(title: "Earnings", image: earningsImage,tag: 0)
+        incomeViewController.tabBarItem = earningsItem
+        
         viewControllers = [
-            generateNavigationController(rootViewController: incomeViewController, title: "Income", image: incomeImage!),
+            incomeViewController,
             generateNavigationController(rootViewController: graphViewCotroller, title: "Graph", image: graphImage!),
             generateNavigationController(rootViewController: spendViewController, title: "Spend", image: spendImage!)
         ]

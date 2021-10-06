@@ -7,24 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F136270D41AE001649E6 /* UILabel + Extension.swift */; };
+		8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F139270D43B9001649E6 /* UIFont + Extension.swift */; };
+		8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */; };
 		84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC3270AA6AC005F106F /* AppDelegate.swift */; };
 		84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */; };
 		84A0BECD270AA6AD005F106F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A0BECC270AA6AD005F106F /* Assets.xcassets */; };
 		84A0BED0270AA6AD005F106F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A0BECE270AA6AD005F106F /* LaunchScreen.storyboard */; };
-		84A0BED8270AA8BD005F106F /* IncomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED7270AA8BD005F106F /* IncomeViewController.swift */; };
+		84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED7270AA8BD005F106F /* EarningsViewController.swift */; };
 		84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED9270AA90F005F106F /* SpendViewController.swift */; };
 		84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDB270AA926005F106F /* GraphViewController.swift */; };
 		84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8449F136270D41AE001649E6 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		8449F139270D43B9001649E6 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
+		8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extenstion.swift"; sourceTree = "<group>"; };
 		84A0BEC0270AA6AC005F106F /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A0BEC3270AA6AC005F106F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84A0BECC270AA6AD005F106F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A0BECF270AA6AD005F106F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A0BED1270AA6AD005F106F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84A0BED7270AA8BD005F106F /* IncomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeViewController.swift; sourceTree = "<group>"; };
+		84A0BED7270AA8BD005F106F /* EarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsViewController.swift; sourceTree = "<group>"; };
 		84A0BED9270AA90F005F106F /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
 		84A0BEDB270AA926005F106F /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
@@ -41,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8449F138270D41B5001649E6 /* UIKIt */ = {
+			isa = PBXGroup;
+			children = (
+				8449F136270D41AE001649E6 /* UILabel + Extension.swift */,
+				8449F139270D43B9001649E6 /* UIFont + Extension.swift */,
+				8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */,
+			);
+			path = UIKIt;
+			sourceTree = "<group>";
+		};
 		84A0BEB7270AA6AC005F106F = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +79,7 @@
 				84A0BEC3270AA6AC005F106F /* AppDelegate.swift */,
 				84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */,
 				84A0BEDD270AA948005F106F /* Controllers */,
+				8449F138270D41B5001649E6 /* UIKIt */,
 				84A0BECC270AA6AD005F106F /* Assets.xcassets */,
 				84A0BECE270AA6AD005F106F /* LaunchScreen.storyboard */,
 				84A0BED1270AA6AD005F106F /* Info.plist */,
@@ -73,7 +90,7 @@
 		84A0BEDD270AA948005F106F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84A0BED7270AA8BD005F106F /* IncomeViewController.swift */,
+				84A0BED7270AA8BD005F106F /* EarningsViewController.swift */,
 				84A0BED9270AA90F005F106F /* SpendViewController.swift */,
 				84A0BEDB270AA926005F106F /* GraphViewController.swift */,
 				84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */,
@@ -150,9 +167,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */,
 				84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */,
-				84A0BED8270AA8BD005F106F /* IncomeViewController.swift in Sources */,
+				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
+				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
+				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,
 				84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */,
 				84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */,
 				84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */,
