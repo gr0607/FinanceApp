@@ -8,9 +8,56 @@
 import UIKit
 
 class SpendViewController: UIViewController {
+    
+    var dummyData = ["First", "Second","Third", "Four", "Five", "Six", "Seven", "Eight", "Nine"," Ten"]
+    
+    let tableView = UITableView()
+    let spendButton = UIButton(title: "Add Spending", titleColor: #colorLiteral(red: 0.2352941176, green: 0.137254902, blue: 0.0862745098, alpha: 1), backgroundColor: #colorLiteral(red: 0.2470588235, green: 0.9960784314, blue: 0.1843137255, alpha: 1), font: .geezaPro20())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        title = "Spending"
+        setupConstraints()
+        view.backgroundColor = .white
+        tableView.dataSource = self
+    }
+}
+
+//MARK: - Setup Layout
+extension SpendViewController {
+    private func setupConstraints() {
+        view.addSubview(tableView)
+        view.addSubview(spendButton)
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        spendButton.translatesAutoresizingMaskIntoConstraints = false
+        
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: view.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            tableView.bottomAnchor.constraint(equalTo: spendButton.topAnchor, constant: -10)
+        ])
+        
+        NSLayoutConstraint.activate([
+            spendButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            spendButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            spendButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80)
+        ])
+    }
+}
+
+extension SpendViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dummyData.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = dummyData[indexPath.row]
+        return cell
     }
 }
 

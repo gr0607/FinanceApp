@@ -15,7 +15,7 @@ class EarningsViewController: UIViewController {
     let sumLabel = UILabel(text: "49999")
     let mainLabel = UILabel(text: "Earnings",font: .geezaPro30())
     let tableView = UITableView()
-    let addEarningsButton = UIButton(title: "Add earnings",titleColor: #colorLiteral(red: 0.2349348381, green: 0.1369994054, blue: 0.086765045, alpha: 1) ,backgroundColor: #colorLiteral(red: 0.246423343, green: 0.9964927982, blue: 0.1843239175, alpha: 1))
+    let addEarningsButton = UIButton(title: "Add earnings",titleColor: #colorLiteral(red: 0.2352941176, green: 0.137254902, blue: 0.0862745098, alpha: 1) ,backgroundColor: #colorLiteral(red: 0.2470588235, green: 0.9960784314, blue: 0.1843137255, alpha: 1))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,6 +76,7 @@ extension EarningsViewController {
     }
 }
 
+//MARK: - TableView datasource
 extension EarningsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dummyData.count
