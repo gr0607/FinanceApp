@@ -57,7 +57,7 @@ extension EarningsViewController {
         ])
         
         NSLayoutConstraint.activate([
-            addEarningsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -80),
+            addEarningsButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100),
             addEarningsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             addEarningsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20)
         ])
@@ -74,7 +74,8 @@ extension EarningsViewController {
             tableView.bottomAnchor.constraint(equalTo: addEarningsButton.topAnchor, constant: -8)
         ])
         
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(EarningTableViewCell.self, forCellReuseIdentifier: EarningTableViewCell.reuseId)
+        tableView.rowHeight = 60
     }
 }
 
@@ -85,11 +86,12 @@ extension EarningsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: EarningTableViewCell.reuseId, for: indexPath) as! EarningTableViewCell
         let earnings = earnings[indexPath.row]
         
-        cell.textLabel?.text = earnings.incomeName
-        cell.detailTextLabel?.text = earnings.incomeSum.description
+        cell.earningNameLabel.text = earnings.incomeName
+        cell.earningCountLabel.text = "\(earnings.incomeSum.description)$"
+        cell.earningDateLabel.text = earnings.date.description
         return cell
     }
 }
