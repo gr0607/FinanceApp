@@ -6,10 +6,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainTabBarController: UITabBarController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         
         let incomeViewController = EarningsViewController()
         let graphViewCotroller = GraphViewController()

@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F136270D41AE001649E6 /* UILabel + Extension.swift */; };
 		8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F139270D43B9001649E6 /* UIFont + Extension.swift */; };
 		8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */; };
+		84818566271526F10074CE48 /* Earnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818565271526F10074CE48 /* Earnings.swift */; };
 		84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC3270AA6AC005F106F /* AppDelegate.swift */; };
 		84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */; };
 		84A0BECD270AA6AD005F106F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A0BECC270AA6AD005F106F /* Assets.xcassets */; };
@@ -18,12 +19,16 @@
 		84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED9270AA90F005F106F /* SpendViewController.swift */; };
 		84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDB270AA926005F106F /* GraphViewController.swift */; };
 		84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */; };
+		84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3027152DF9004FF146 /* StorageManager.swift */; };
+		F7E657C92D4181D2E9C408B8 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7305AD22CF01B51FE2DA6F14 /* Pods-FinanceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.debug.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.debug.xcconfig"; sourceTree = "<group>"; };
 		8449F136270D41AE001649E6 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		8449F139270D43B9001649E6 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extenstion.swift"; sourceTree = "<group>"; };
+		84818565271526F10074CE48 /* Earnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earnings.swift; sourceTree = "<group>"; };
 		84A0BEC0270AA6AC005F106F /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A0BEC3270AA6AC005F106F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +39,9 @@
 		84A0BED9270AA90F005F106F /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
 		84A0BEDB270AA926005F106F /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		84BD1D3027152DF9004FF146 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
+		E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,12 +49,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E657C92D4181D2E9C408B8 /* Pods_FinanceApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15EC8E030DAEF6684AEBD85E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7305AD22CF01B51FE2DA6F14 /* Pods-FinanceApp.debug.xcconfig */,
+				D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8449F138270D41B5001649E6 /* UIKIt */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,11 +75,29 @@
 			path = UIKIt;
 			sourceTree = "<group>";
 		};
+		84818564271526DA0074CE48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84818565271526F10074CE48 /* Earnings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84818567271528020074CE48 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84BD1D3027152DF9004FF146 /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		84A0BEB7270AA6AC005F106F = {
 			isa = PBXGroup;
 			children = (
 				84A0BEC2270AA6AC005F106F /* FinanceApp */,
 				84A0BEC1270AA6AC005F106F /* Products */,
+				15EC8E030DAEF6684AEBD85E /* Pods */,
+				F3013CA372403CA33AA58750 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +114,8 @@
 			children = (
 				84A0BEC3270AA6AC005F106F /* AppDelegate.swift */,
 				84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */,
+				84818567271528020074CE48 /* Services */,
+				84818564271526DA0074CE48 /* Models */,
 				84A0BEDD270AA948005F106F /* Controllers */,
 				8449F138270D41B5001649E6 /* UIKIt */,
 				84A0BECC270AA6AD005F106F /* Assets.xcassets */,
@@ -98,6 +136,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		F3013CA372403CA33AA58750 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -105,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A0BED4270AA6AD005F106F /* Build configuration list for PBXNativeTarget "FinanceApp" */;
 			buildPhases = (
+				6DD19F9F634AA81105B81DED /* [CP] Check Pods Manifest.lock */,
 				84A0BEBC270AA6AC005F106F /* Sources */,
 				84A0BEBD270AA6AC005F106F /* Frameworks */,
 				84A0BEBE270AA6AC005F106F /* Resources */,
+				47666906F5C737990D8B83A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +210,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47666906F5C737990D8B83A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinanceApp/Pods-FinanceApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD19F9F634AA81105B81DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinanceApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84A0BEBC270AA6AC005F106F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -169,12 +259,14 @@
 			files = (
 				8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */,
 				84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */,
+				84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */,
 				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
 				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
 				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,
 				84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */,
 				84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */,
+				84818566271526F10074CE48 /* Earnings.swift in Sources */,
 				84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +403,7 @@
 		};
 		84A0BED5270AA6AD005F106F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7305AD22CF01B51FE2DA6F14 /* Pods-FinanceApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -329,6 +422,7 @@
 		};
 		84A0BED6270AA6AD005F106F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

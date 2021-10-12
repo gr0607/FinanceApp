@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class EarningsViewController: UIViewController {
     
-    var dummyData = ["First", "Second","Third", "Four", "Five", "Six", "Seven", "Eight", "Nine"," Ten"]
+    private var earnings: Results<Earnings>!
     
     let totalLabel = UILabel(text: "Total")
     let sumLabel = UILabel(text: "49999")
@@ -18,6 +19,7 @@ class EarningsViewController: UIViewController {
     let addEarningsButton = UIButton(title: "Add earnings",titleColor: #colorLiteral(red: 0.2352941176, green: 0.137254902, blue: 0.0862745098, alpha: 1) ,backgroundColor: #colorLiteral(red: 0.2470588235, green: 0.9960784314, blue: 0.1843137255, alpha: 1))
     
     override func viewDidLoad() {
+        earnings = StorageManager.getAllEarnings()
         super.viewDidLoad()
         view.backgroundColor = .white
         tableView.dataSource = self
@@ -79,12 +81,15 @@ extension EarningsViewController {
 //MARK: - TableView datasource
 extension EarningsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyData.count
+        return earnings.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = dummyData[indexPath.row]
+        let earnings = earnings[indexPath.row]
+        
+        cell.textLabel?.text = earnings.incomeName
+        cell.detailTextLabel?.text = earnings.incomeSum.description
         return cell
     }
 }
