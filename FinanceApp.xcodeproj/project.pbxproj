@@ -21,6 +21,9 @@
 		84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */; };
 		84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3027152DF9004FF146 /* StorageManager.swift */; };
 		84BD1D3427153AB1004FF146 /* EarningTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3327153AB1004FF146 /* EarningTableViewCell.swift */; };
+		84BD1D36271541FA004FF146 /* Spend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D35271541FA004FF146 /* Spend.swift */; };
+		84BD1D3827154277004FF146 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3727154277004FF146 /* Category.swift */; };
+		84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFC27167DD50047F800 /* FakeData.swift */; };
 		F7E657C92D4181D2E9C408B8 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		84BD1D3027152DF9004FF146 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		84BD1D3327153AB1004FF146 /* EarningTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningTableViewCell.swift; sourceTree = "<group>"; };
+		84BD1D35271541FA004FF146 /* Spend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spend.swift; sourceTree = "<group>"; };
+		84BD1D3727154277004FF146 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		84BD8BFC27167DD50047F800 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
 		D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				84818565271526F10074CE48 /* Earnings.swift */,
+				84BD1D35271541FA004FF146 /* Spend.swift */,
+				84BD1D3727154277004FF146 /* Category.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 				84A0BECC270AA6AD005F106F /* Assets.xcassets */,
 				84A0BECE270AA6AD005F106F /* LaunchScreen.storyboard */,
 				84A0BED1270AA6AD005F106F /* Info.plist */,
+				84BD8BFC27167DD50047F800 /* FakeData.swift */,
 			);
 			path = FinanceApp;
 			sourceTree = "<group>";
@@ -272,14 +281,17 @@
 				8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */,
 				84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */,
 				84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */,
+				84BD1D36271541FA004FF146 /* Spend.swift in Sources */,
 				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
 				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
 				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,
+				84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */,
 				84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */,
 				84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */,
 				84818566271526F10074CE48 /* Earnings.swift in Sources */,
 				84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */,
+				84BD1D3827154277004FF146 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
