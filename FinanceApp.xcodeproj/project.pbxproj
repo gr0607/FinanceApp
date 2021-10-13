@@ -24,6 +24,7 @@
 		84BD1D36271541FA004FF146 /* Spend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D35271541FA004FF146 /* Spend.swift */; };
 		84BD1D3827154277004FF146 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3727154277004FF146 /* Category.swift */; };
 		84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFC27167DD50047F800 /* FakeData.swift */; };
+		84BD8BFF271693CD0047F800 /* DetailSpendViewControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */; };
 		F7E657C92D4181D2E9C408B8 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		84BD1D35271541FA004FF146 /* Spend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spend.swift; sourceTree = "<group>"; };
 		84BD1D3727154277004FF146 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		84BD8BFC27167DD50047F800 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
+		84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpendViewControllelr.swift; sourceTree = "<group>"; };
 		D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 				84A0BED9270AA90F005F106F /* SpendViewController.swift */,
 				84A0BEDB270AA926005F106F /* GraphViewController.swift */,
 				84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */,
+				84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */,
 				84BD1D36271541FA004FF146 /* Spend.swift in Sources */,
 				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
+				84BD8BFF271693CD0047F800 /* DetailSpendViewControllelr.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
 				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
 				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,

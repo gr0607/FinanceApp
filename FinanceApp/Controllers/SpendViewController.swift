@@ -9,7 +9,7 @@ import UIKit
 
 class SpendViewController: UIViewController {
     
-    var dummyData = ["First", "Second","Third", "Four", "Five", "Six", "Seven", "Eight", "Nine"," Ten"]
+    var categories = StorageManager.getAllCategories()
     
     let tableView = UITableView()
     let spendButton = UIButton(title: "Add Spending", titleColor: #colorLiteral(red: 0.2352941176, green: 0.137254902, blue: 0.0862745098, alpha: 1), backgroundColor: #colorLiteral(red: 0.2470588235, green: 0.9960784314, blue: 0.1843137255, alpha: 1), font: .geezaPro20())
@@ -20,6 +20,7 @@ class SpendViewController: UIViewController {
         setupConstraints()
         view.backgroundColor = .white
         tableView.dataSource = self
+        tableView.delegate = self
     }
 }
 
@@ -49,15 +50,22 @@ extension SpendViewController {
     }
 }
 
-extension SpendViewController: UITableViewDataSource {
+extension SpendViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dummyData.count
+        return categories.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = dummyData[indexPath.row]
+        cell.textLabel?.text = categories[indexPath.row].name
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let details = categories[indexPath.row].spends
+        let detailVC = DetailSpendViewController()
+        detailVC.details = details
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 

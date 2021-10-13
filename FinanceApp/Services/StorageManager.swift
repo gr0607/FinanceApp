@@ -48,7 +48,5 @@ class StorageManager {
             realm.delete(realm.objects(Category.self))
             realm.delete(realm.objects(Spend.self))
         })
-        
-    }
-    
+    }    
 }
