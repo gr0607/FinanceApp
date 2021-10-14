@@ -8,9 +8,9 @@
 import UIKit
 import RealmSwift
 
-class DetailSpendViewController: UITableViewController {
+class SpendViewController: UITableViewController {
     
-    var details: List<Spend>?
+    lazy var spendPresenter = SpendViewControllerPresenter(spendViewController: self)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +18,13 @@ class DetailSpendViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return details?.count ?? 2
+        return spendPresenter.getDetailsCount() ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let detail: Spend? = details?[indexPath.row]
+        let detail = spendPresenter.getDetail(for: indexPath)
         cell.textLabel?.text = detail?.name ?? "1"
-        
         return cell
     }
 }

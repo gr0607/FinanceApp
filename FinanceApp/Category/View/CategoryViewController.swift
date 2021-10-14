@@ -7,16 +7,16 @@
 
 import UIKit
 
-class SpendViewController: UIViewController {
-    
-    var categories = StorageManager.getAllCategories()
+class CategoryViewController: UIViewController {
+        
+    lazy var categoryPresenter = CategoryViewControllerPresenter(categoryVC: self)
     
     let tableView = UITableView()
     let spendButton = UIButton(title: "Add Spending", titleColor: #colorLiteral(red: 0.2352941176, green: 0.137254902, blue: 0.0862745098, alpha: 1), backgroundColor: #colorLiteral(red: 0.2470588235, green: 0.9960784314, blue: 0.1843137255, alpha: 1), font: .geezaPro20())
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Spending"
+        title = "Category"
         setupConstraints()
         view.backgroundColor = .white
         tableView.dataSource = self
@@ -25,7 +25,7 @@ class SpendViewController: UIViewController {
 }
 
 //MARK: - Setup Layout
-extension SpendViewController {
+extension CategoryViewController {
     private func setupConstraints() {
         view.addSubview(tableView)
         view.addSubview(spendButton)
@@ -50,22 +50,22 @@ extension SpendViewController {
     }
 }
 
-extension SpendViewController: UITableViewDataSource, UITableViewDelegate {
+extension CategoryViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return categories.count
+        return categoryPresenter.getCategoriesCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = categories[indexPath.row].name
+        let category = categoryPresenter.getCategories(for: indexPath)
+        cell.accessoryType = .disclosureIndicator
+        cell.textLabel?.text = category.name
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let details = categories[indexPath.row].spends
-        let detailVC = DetailSpendViewController()
-        detailVC.details = details
-        navigationController?.pushViewController(detailVC, animated: true)
+        let category = categoryPresenter.getCategories(for: indexPath)
+        categoryPresenter.showDetail(for: category)
     }
 }
 
@@ -78,7 +78,7 @@ struct SpendVCProvider: PreviewProvider {
     }
     
     struct ContainerView: UIViewControllerRepresentable {
-        let spendVC = SpendViewController()
+        let spendVC = CategoryViewController()
         
         func makeUIViewController(context: Context) -> some UIViewController {
             return spendVC

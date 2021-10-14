@@ -12,13 +12,15 @@
 		8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */; };
 		8457E5222717C7F800BD74A5 /* EarningsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E5212717C7F800BD74A5 /* EarningsPresenter.swift */; };
 		8457E5242717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E5232717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift */; };
+		8457E52B2717DB2E00BD74A5 /* CategoryViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E52A2717DB2E00BD74A5 /* CategoryViewControllerPresenter.swift */; };
+		8457E5342717DFA000BD74A5 /* SpendViewControllerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E5332717DFA000BD74A5 /* SpendViewControllerPresenter.swift */; };
 		84818566271526F10074CE48 /* Earnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818565271526F10074CE48 /* Earnings.swift */; };
 		84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC3270AA6AC005F106F /* AppDelegate.swift */; };
 		84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */; };
 		84A0BECD270AA6AD005F106F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A0BECC270AA6AD005F106F /* Assets.xcassets */; };
 		84A0BED0270AA6AD005F106F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A0BECE270AA6AD005F106F /* LaunchScreen.storyboard */; };
 		84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED7270AA8BD005F106F /* EarningsViewController.swift */; };
-		84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED9270AA90F005F106F /* SpendViewController.swift */; };
+		84A0BEDA270AA90F005F106F /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BED9270AA90F005F106F /* CategoryViewController.swift */; };
 		84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDB270AA926005F106F /* GraphViewController.swift */; };
 		84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */; };
 		84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3027152DF9004FF146 /* StorageManager.swift */; };
@@ -26,7 +28,7 @@
 		84BD1D36271541FA004FF146 /* Spend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D35271541FA004FF146 /* Spend.swift */; };
 		84BD1D3827154277004FF146 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD1D3727154277004FF146 /* Category.swift */; };
 		84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFC27167DD50047F800 /* FakeData.swift */; };
-		84BD8BFF271693CD0047F800 /* DetailSpendViewControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */; };
+		84BD8BFF271693CD0047F800 /* SpendViewControllelr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BD8BFE271693CD0047F800 /* SpendViewControllelr.swift */; };
 		F7E657C92D4181D2E9C408B8 /* Pods_FinanceApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extenstion.swift"; sourceTree = "<group>"; };
 		8457E5212717C7F800BD74A5 /* EarningsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsPresenter.swift; sourceTree = "<group>"; };
 		8457E5232717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsTableViewCellPresenter.swift; sourceTree = "<group>"; };
+		8457E52A2717DB2E00BD74A5 /* CategoryViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewControllerPresenter.swift; sourceTree = "<group>"; };
+		8457E5332717DFA000BD74A5 /* SpendViewControllerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewControllerPresenter.swift; sourceTree = "<group>"; };
 		84818565271526F10074CE48 /* Earnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earnings.swift; sourceTree = "<group>"; };
 		84A0BEC0270AA6AC005F106F /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A0BEC3270AA6AC005F106F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		84A0BECF270AA6AD005F106F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A0BED1270AA6AD005F106F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A0BED7270AA8BD005F106F /* EarningsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsViewController.swift; sourceTree = "<group>"; };
-		84A0BED9270AA90F005F106F /* SpendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewController.swift; sourceTree = "<group>"; };
+		84A0BED9270AA90F005F106F /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		84A0BEDB270AA926005F106F /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		84BD1D3027152DF9004FF146 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
@@ -53,7 +57,7 @@
 		84BD1D35271541FA004FF146 /* Spend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spend.swift; sourceTree = "<group>"; };
 		84BD1D3727154277004FF146 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		84BD8BFC27167DD50047F800 /* FakeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeData.swift; sourceTree = "<group>"; };
-		84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSpendViewControllelr.swift; sourceTree = "<group>"; };
+		84BD8BFE271693CD0047F800 /* SpendViewControllelr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendViewControllelr.swift; sourceTree = "<group>"; };
 		D28F5756DB9C847226226489 /* Pods-FinanceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinanceApp.release.xcconfig"; path = "Target Support Files/Pods-FinanceApp/Pods-FinanceApp.release.xcconfig"; sourceTree = "<group>"; };
 		E5F24731BF43C954252DF267 /* Pods_FinanceApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinanceApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -79,14 +83,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		8449F138270D41B5001649E6 /* UIKIt */ = {
+		8449F138270D41B5001649E6 /* UIKIt + Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				8449F136270D41AE001649E6 /* UILabel + Extension.swift */,
 				8449F139270D43B9001649E6 /* UIFont + Extension.swift */,
 				8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */,
 			);
-			path = UIKIt;
+			path = "UIKIt + Extensions";
 			sourceTree = "<group>";
 		};
 		8457E51C2717C6A200BD74A5 /* Earnings */ = {
@@ -133,13 +137,112 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		84818564271526DA0074CE48 /* Models */ = {
+		8457E5252717D9EC00BD74A5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8457E5262717DA0800BD74A5 /* Model */,
+				8457E5272717DA1400BD74A5 /* View */,
+				8457E5282717DA1E00BD74A5 /* Presenter */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8457E5262717DA0800BD74A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84BD1D3727154277004FF146 /* Category.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8457E5272717DA1400BD74A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A0BED9270AA90F005F106F /* CategoryViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8457E5282717DA1E00BD74A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8457E52A2717DB2E00BD74A5 /* CategoryViewControllerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8457E52E2717DF2B00BD74A5 /* Spends */ = {
+			isa = PBXGroup;
+			children = (
+				8457E5302717DF3A00BD74A5 /* Model */,
+				8457E5322717DF4700BD74A5 /* Presenter */,
+				8457E5312717DF4200BD74A5 /* View */,
+				8457E52F2717DF3500BD74A5 /* Cell */,
+			);
+			path = Spends;
+			sourceTree = "<group>";
+		};
+		8457E52F2717DF3500BD74A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8457E5302717DF3A00BD74A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				84BD1D35271541FA004FF146 /* Spend.swift */,
-				84BD1D3727154277004FF146 /* Category.swift */,
 			);
-			path = Models;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8457E5312717DF4200BD74A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84BD8BFE271693CD0047F800 /* SpendViewControllelr.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8457E5322717DF4700BD74A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8457E5332717DFA000BD74A5 /* SpendViewControllerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8457E5352717E1D800BD74A5 /* Graphs */ = {
+			isa = PBXGroup;
+			children = (
+				8457E5392717E20B00BD74A5 /* Presenter */,
+				8457E5382717E20300BD74A5 /* View */,
+				8457E5362717E1F500BD74A5 /* Model */,
+			);
+			path = Graphs;
+			sourceTree = "<group>";
+		};
+		8457E5362717E1F500BD74A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8457E5382717E20300BD74A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A0BEDB270AA926005F106F /* GraphViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8457E5392717E20B00BD74A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		84818567271528020074CE48 /* Services */ = {
@@ -173,36 +276,19 @@
 			children = (
 				84A0BEC3270AA6AC005F106F /* AppDelegate.swift */,
 				84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */,
+				84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */,
+				8457E5352717E1D800BD74A5 /* Graphs */,
 				8457E51C2717C6A200BD74A5 /* Earnings */,
+				8457E5252717D9EC00BD74A5 /* Category */,
+				8457E52E2717DF2B00BD74A5 /* Spends */,
+				8449F138270D41B5001649E6 /* UIKIt + Extensions */,
 				84818567271528020074CE48 /* Services */,
-				84818564271526DA0074CE48 /* Models */,
-				84A0BEDD270AA948005F106F /* Controllers */,
-				8449F138270D41B5001649E6 /* UIKIt */,
 				84A0BECC270AA6AD005F106F /* Assets.xcassets */,
 				84A0BECE270AA6AD005F106F /* LaunchScreen.storyboard */,
 				84A0BED1270AA6AD005F106F /* Info.plist */,
 				84BD8BFC27167DD50047F800 /* FakeData.swift */,
 			);
 			path = FinanceApp;
-			sourceTree = "<group>";
-		};
-		84A0BEDD270AA948005F106F /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				84BD1D3227153A9D004FF146 /* Cells */,
-				84A0BED9270AA90F005F106F /* SpendViewController.swift */,
-				84A0BEDB270AA926005F106F /* GraphViewController.swift */,
-				84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */,
-				84BD8BFE271693CD0047F800 /* DetailSpendViewControllelr.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		84BD1D3227153A9D004FF146 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		F3013CA372403CA33AA58750 /* Frameworks */ = {
@@ -328,17 +414,19 @@
 			files = (
 				84BD1D3427153AB1004FF146 /* EarningTableViewCell.swift in Sources */,
 				8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */,
-				84A0BEDA270AA90F005F106F /* SpendViewController.swift in Sources */,
+				8457E5342717DFA000BD74A5 /* SpendViewControllerPresenter.swift in Sources */,
+				84A0BEDA270AA90F005F106F /* CategoryViewController.swift in Sources */,
 				84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */,
 				84BD1D36271541FA004FF146 /* Spend.swift in Sources */,
 				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
 				8457E5222717C7F800BD74A5 /* EarningsPresenter.swift in Sources */,
-				84BD8BFF271693CD0047F800 /* DetailSpendViewControllelr.swift in Sources */,
+				84BD8BFF271693CD0047F800 /* SpendViewControllelr.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
 				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
 				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,
 				8457E5242717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift in Sources */,
 				84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */,
+				8457E52B2717DB2E00BD74A5 /* CategoryViewControllerPresenter.swift in Sources */,
 				84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */,
 				84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */,
 				84818566271526F10074CE48 /* Earnings.swift in Sources */,

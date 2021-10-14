@@ -15,6 +15,5 @@ class Category: Object {
         self.init()
         self.name = name
     }
-    
 }
 

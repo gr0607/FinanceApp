@@ -15,7 +15,7 @@ class MainTabBarController: UITabBarController {
       
         let incomeViewController = EarningsViewController()
         let graphViewCotroller = GraphViewController()
-        let spendViewController = SpendViewController()
+        let spendViewController = CategoryViewController()
         
         let earningsImage = UIImage(systemName: "newspaper")
         let graphImage = UIImage(systemName: "arrow.up.right")
