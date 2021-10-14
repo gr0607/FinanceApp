@@ -8,6 +8,9 @@
 import UIKit
 
 class EarningTableViewCell: UITableViewCell {
+    
+    lazy var earningsCellPresenter = EarningsTableViewCellPresenter(earningsCell: self)
+    
     static let reuseId = "EarningTableViewCell"
     
     let earningNameLabel = UILabel()
@@ -16,7 +19,7 @@ class EarningTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+
         earningNameLabel.translatesAutoresizingMaskIntoConstraints = false
         earningCountLabel.translatesAutoresizingMaskIntoConstraints = false
         earningDateLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -33,12 +36,12 @@ class EarningTableViewCell: UITableViewCell {
         NSLayoutConstraint.activate([
             earningCountLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             earningCountLabel.topAnchor.constraint(equalTo: earningNameLabel.bottomAnchor, constant: 8),
-            earningCountLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+            earningCountLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
         
         NSLayoutConstraint.activate([
             earningDateLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
-            earningDateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8)
+            earningDateLabel.bottomAnchor.constraint(equalTo: contentView.bottomAnchor)
         ])
     }
     

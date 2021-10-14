@@ -10,6 +10,8 @@
 		8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F136270D41AE001649E6 /* UILabel + Extension.swift */; };
 		8449F13A270D43B9001649E6 /* UIFont + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F139270D43B9001649E6 /* UIFont + Extension.swift */; };
 		8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */; };
+		8457E5222717C7F800BD74A5 /* EarningsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E5212717C7F800BD74A5 /* EarningsPresenter.swift */; };
+		8457E5242717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457E5232717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift */; };
 		84818566271526F10074CE48 /* Earnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84818565271526F10074CE48 /* Earnings.swift */; };
 		84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC3270AA6AC005F106F /* AppDelegate.swift */; };
 		84A0BEC6270AA6AC005F106F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */; };
@@ -33,6 +35,8 @@
 		8449F136270D41AE001649E6 /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 		8449F139270D43B9001649E6 /* UIFont + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont + Extension.swift"; sourceTree = "<group>"; };
 		8449F13B270D498C001649E6 /* UIButton + Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extenstion.swift"; sourceTree = "<group>"; };
+		8457E5212717C7F800BD74A5 /* EarningsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsPresenter.swift; sourceTree = "<group>"; };
+		8457E5232717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarningsTableViewCellPresenter.swift; sourceTree = "<group>"; };
 		84818565271526F10074CE48 /* Earnings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Earnings.swift; sourceTree = "<group>"; };
 		84A0BEC0270AA6AC005F106F /* FinanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A0BEC3270AA6AC005F106F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,10 +89,53 @@
 			path = UIKIt;
 			sourceTree = "<group>";
 		};
-		84818564271526DA0074CE48 /* Models */ = {
+		8457E51C2717C6A200BD74A5 /* Earnings */ = {
+			isa = PBXGroup;
+			children = (
+				8457E51D2717C6C400BD74A5 /* Cell */,
+				8457E51E2717C6FE00BD74A5 /* Model */,
+				8457E51F2717C71900BD74A5 /* View */,
+				8457E5202717C72F00BD74A5 /* Presenter */,
+			);
+			path = Earnings;
+			sourceTree = "<group>";
+		};
+		8457E51D2717C6C400BD74A5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				84BD1D3327153AB1004FF146 /* EarningTableViewCell.swift */,
+				8457E5232717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8457E51E2717C6FE00BD74A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				84818565271526F10074CE48 /* Earnings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8457E51F2717C71900BD74A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A0BED7270AA8BD005F106F /* EarningsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8457E5202717C72F00BD74A5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8457E5212717C7F800BD74A5 /* EarningsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		84818564271526DA0074CE48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
 				84BD1D35271541FA004FF146 /* Spend.swift */,
 				84BD1D3727154277004FF146 /* Category.swift */,
 			);
@@ -126,6 +173,7 @@
 			children = (
 				84A0BEC3270AA6AC005F106F /* AppDelegate.swift */,
 				84A0BEC5270AA6AC005F106F /* SceneDelegate.swift */,
+				8457E51C2717C6A200BD74A5 /* Earnings */,
 				84818567271528020074CE48 /* Services */,
 				84818564271526DA0074CE48 /* Models */,
 				84A0BEDD270AA948005F106F /* Controllers */,
@@ -142,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				84BD1D3227153A9D004FF146 /* Cells */,
-				84A0BED7270AA8BD005F106F /* EarningsViewController.swift */,
 				84A0BED9270AA90F005F106F /* SpendViewController.swift */,
 				84A0BEDB270AA926005F106F /* GraphViewController.swift */,
 				84A0BEDE270AAB0B005F106F /* MainTabBarController.swift */,
@@ -154,7 +201,6 @@
 		84BD1D3227153A9D004FF146 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				84BD1D3327153AB1004FF146 /* EarningTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -286,10 +332,12 @@
 				84BD1D3127152DF9004FF146 /* StorageManager.swift in Sources */,
 				84BD1D36271541FA004FF146 /* Spend.swift in Sources */,
 				84A0BED8270AA8BD005F106F /* EarningsViewController.swift in Sources */,
+				8457E5222717C7F800BD74A5 /* EarningsPresenter.swift in Sources */,
 				84BD8BFF271693CD0047F800 /* DetailSpendViewControllelr.swift in Sources */,
 				84A0BEDF270AAB0B005F106F /* MainTabBarController.swift in Sources */,
 				8449F137270D41AE001649E6 /* UILabel + Extension.swift in Sources */,
 				8449F13C270D498C001649E6 /* UIButton + Extenstion.swift in Sources */,
+				8457E5242717CAE600BD74A5 /* EarningsTableViewCellPresenter.swift in Sources */,
 				84BD8BFD27167DD50047F800 /* FakeData.swift in Sources */,
 				84A0BEDC270AA926005F106F /* GraphViewController.swift in Sources */,
 				84A0BEC4270AA6AC005F106F /* AppDelegate.swift in Sources */,
